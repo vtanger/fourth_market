@@ -6,7 +6,7 @@ MarketFour::Application.routes.draw do
   match '/help',    to: 'static_pages#help'
   match '/about',   to: 'static_pages#about'
   match '/contact', to: 'static_pages#contact'
-  #match '/getinvolved' to: '/static_pages#getinvolved'
+  match '/getinvolved', to: 'static_pages#getinvolved'
 
 
   # The priority is based upon order of creation:

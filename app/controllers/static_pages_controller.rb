@@ -4,4 +4,10 @@ class StaticPagesController < ApplicationController
 
   def help
   end
+
+  def getinvolved
+  end
+
+  def about
+  end
 end
