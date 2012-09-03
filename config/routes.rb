@@ -1,4 +1,6 @@
 MarketFour::Application.routes.draw do
+  resources :posts
+
   root to: 'static_pages#home'
 
   match '/signup',  to: 'users#new'
