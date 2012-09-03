@@ -644,7 +644,7 @@ h6 small {
 h1 {
   font-size: 36px;
   line-height: 40px;
-  font-family: 'Handlee';
+  font-family: 'Lobster', cursive;
 }
 
 h2 {
@@ -669,6 +669,7 @@ h4 {
 h5 {
   font-size: 14px;
   line-height: 20px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 h6 {
@@ -4063,7 +4064,6 @@ input[type="submit"].btn.btn-mini {
   font-weight: 200;
   line-height: 1;
   color: #ffcc33;
-  font-family: Handlee;
 }
 
 .navbar .brand:hover {
@@ -5581,7 +5581,7 @@ a.badge:hover {
 .hero-unit {
   padding: 60px;
   margin-bottom: 30px;
-  background-color: #eeeeee;
+  background-color:#eeeeee;
   -webkit-border-radius: 6px;
      -moz-border-radius: 6px;
           border-radius: 6px;

@@ -1,5 +1,7 @@
-<h1>Listing posts</h1>
+<h1>Blog</h1>
 
+
+<!--
 <table>
   <tr>
     <th>Title</th>
@@ -24,4 +26,25 @@
 
 <br />
 
+-->
+
 <%= link_to 'New Post', new_post_path %>
+
+<% @posts.each do |post| %>
+<div class="container">
+  <div class="row">
+    <div class="span6 offset2">
+      <h3><%= post.title %><h3>
+        <h5 style="color:black;font-weight:300"> <%= post.content %> </h5>
+    </div>
+
+    <div class="span2">
+      <ul class="nav nav-list">
+        <li class="nav-header"> Post </li>
+        <li><%= link_to 'Show', post %></li>
+        <li><%= link_to 'Edit', edit_post_path(post) %></li>
+        <li><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %> </li>
+      </ul>
+    </div>
+</div>
+<% end %>
