@@ -5,6 +5,8 @@ gem 'bootstrap-sass', '2.0.4'
 
 gem 'font-awesome-rails'
 
+gem "blogit"
+
 
 group :development do
   gem 'sqlite3', '1.3.5'

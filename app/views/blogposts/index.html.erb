@@ -1,9 +1,18 @@
+
+
 <h1>Blog</h1>
 <%= link_to 'New Post', new_blogpost_path %>
 
 <% @blogposts.each do |blogpost| %>
+
+
 <div class="container">
   <div class="row">
+
+    <div class="span2">
+      <h2><%= blogpost.date_created %></h2>
+      </div>
+
     <div class="span6 offset2">
       <h3><%= blogpost.title %><h3>
         <h5 style="color:black;font-weight:300"> <%= blogpost.content %> </h5>
